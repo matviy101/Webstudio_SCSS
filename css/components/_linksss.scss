@@ -1,0 +1,25 @@
+.linksss {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &__linksss_underline {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding-bottom: 5px; 
+            }
+
+            &::after {
+                color:#007bff;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0; 
+                height: 2px;
+                background-color: #007bff;; 
+                transition: width  250ms ease-in-out;
+            }
+}
